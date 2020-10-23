@@ -1,0 +1,21 @@
+// TEXT SHORTEN
+@mixin text-shorten {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// STRIP UNITS
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+// Full width
+@mixin fullWidth (
+  $maxWidth: 100vw
+) {
+  width: 100vw;
+  max-width: $maxWidth;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,17 @@
+/**********************************************************
+                      FONT mixin
+***********************************************************/
+
+@mixin font (
+  $style: normal,
+  $weight: 700,
+  $size: 62px,
+  $line: 74px,
+  $family: "'Arial', sans-serif"
+) {
+  font-style: $style;
+  font-weight: $weight;
+  @include rem(font-size, $size);
+  @include rem(line-height, $line);
+  font-family: $family;
+}

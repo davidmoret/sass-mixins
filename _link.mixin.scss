@@ -1,0 +1,22 @@
+/**********************************************************
+                       LINK mixin
+***********************************************************/
+
+@mixin a-link(
+  $link: $c-primary,
+  $hover: $c-secondary,
+  $deco: underline,
+  $deco--hover: none
+) {
+  &:link,
+  &:visited {
+    color: $link;
+    text-decoration: $deco;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $hover;
+    text-decoration: $deco--hover;
+  }
+}
