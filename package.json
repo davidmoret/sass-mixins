@@ -1,10 +1,11 @@
 {
   "name": "sass-mixins",
-  "version": "0.1.0",
-  "description": "Sass mixins",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "version": "0.1.5",
+  "description": "Various sass-mixins",
   "author": "d4vm",
-  "license": "MIT"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidmoret/sass-mixins/issues"
+  },
+  "homepage": "https://github.com/davidmoret/sass-mixins"
 }
