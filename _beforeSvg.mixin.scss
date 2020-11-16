@@ -18,6 +18,6 @@
     @include rem(width, $width);
     @include rem(height, $height);
     @include rem(flex, 0 0 $width);
-    @include bgSvg($img);
+    @include bgSvg($svg);
   }
 }
