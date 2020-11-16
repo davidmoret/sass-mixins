@@ -3,9 +3,9 @@
 ***********************************************************/
 
 @mixin beforeSvg (
-  $svg: 'url(../images/ico/ico-dowload.svg)',
   $width: 25px,
   $height: 25px,
+  $svg: 'url(../images/ico/ico-dowload.svg)',
   $margin: 0 15px 0 0
 ) {
   display: flex;

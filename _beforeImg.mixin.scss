@@ -3,9 +3,9 @@
 ***********************************************************/
 
 @mixin beforeImg (
-  $img: "'ico/ico-puce.svg'",
   $width: 25px,
   $height: 25px,
+  $img: "'ico/ico-puce.svg'",
   $margin: 0 15px 0 0
 ) {
   display: flex;
