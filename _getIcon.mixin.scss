@@ -6,7 +6,7 @@
 $data-svg-prefix: 'data:image/svg+xml;utf-8,';
 
 
-@function get-icon( $icon, $color: #fff ) {
+@function get-icon($folder, $icon, $color: #fff ) {
 
   @if 'color' != type-of( $color ) {
 
@@ -14,9 +14,9 @@ $data-svg-prefix: 'data:image/svg+xml;utf-8,';
     @return null;
   }
 
-  @if map-has-key( $icons, $icon ) {
+  @if map-has-key( $folder, $icon ) {
 
-    $icon:        map-get( $icons, $icon );
+    $icon:        map-get( $folder, $icon );
     $placeholder: '%%COLOR%%';
     $data-uri:    str-replace( url( $data-svg-prefix + $icon ), $placeholder, $color );
 

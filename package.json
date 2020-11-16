@@ -1,11 +1,14 @@
 {
   "name": "@insite/sass-mixins",
-  "version": "0.1.3",
+  "version": "0.1.7",
   "description": "Various sass-mixins",
   "author": "d4vm",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/davidmoret/sass-mixins/issues"
   },
-  "homepage": "https://github.com/davidmoret/sass-mixins"
+  "homepage": "https://github.com/davidmoret/sass-mixins",
+  "publishConfig": {
+    "access": "public"
+  }
 }
