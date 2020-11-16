@@ -1,0 +1,28 @@
+/// @author Tracy Rotton
+/// @param {String} $icon - Icon name
+/// @param {String} $color - Color to replace
+/// @return {String} - Data URL icon
+
+$data-svg-prefix: 'data:image/svg+xml;utf-8,';
+
+
+@function get-icon( $icon, $color: #fff ) {
+
+  @if 'color' != type-of( $color ) {
+
+    @warn 'The requested color - "' + $color + '" - was not recognized as a Sass color value.';
+    @return null;
+  }
+
+  @if map-has-key( $icons, $icon ) {
+
+    $icon:        map-get( $icons, $icon );
+    $placeholder: '%%COLOR%%';
+    $data-uri:    str-replace( url( $data-svg-prefix + $icon ), $placeholder, $color );
+
+    @return str-replace( $data-uri, '#', '%23' );
+  }
+
+  @warn 'The requested icon - "' + $icon + '" - is not defined in the $icons map.';
+  @return null;
+}
