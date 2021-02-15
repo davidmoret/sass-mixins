@@ -1,0 +1,14 @@
+/**********************************************************
+                      BGSVG mixin
+***********************************************************/
+
+@mixin bgColoredSvg (
+  $svg: 'url(../images/ico/ico-dowload.svg)',
+  $color: contain,
+  $position: center center,
+  $repeat: no-repeat
+) {
+  background: $color;
+  -webkit-mask-image: $svg;
+  mask-image: $svg;
+}
