@@ -4,11 +4,18 @@
 
 @mixin bgColoredSvg (
   $svg: 'url(../images/ico/ico-dowload.svg)',
-  $color: contain,
-  $position: center center,
-  $repeat: no-repeat
+  $color: green,
+  $size: contain,
+  $repeat: no-repeat,
+  $position: center center
 ) {
   background: $color;
   -webkit-mask-image: $svg;
   mask-image: $svg;
+  -webkit-mask-size: $size;
+  mask-size: $size;
+  -webkit-mask-position: $position;
+  mask-position: $position;
+  -webkit-mask-repeat: $repeat;
+  mask-repeat: $repeat;
 }
