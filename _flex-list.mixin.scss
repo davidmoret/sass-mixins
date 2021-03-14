@@ -1,8 +1,4 @@
-/**********************************************************
-                      LISTING mixin
-***********************************************************/
-
-@mixin flexList(
+@mixin flex-list(
   $cols: 3,
   $margin: 10,
   $first_bp: map-get($breakpoints, "tablet"),
@@ -108,3 +104,4 @@
 // @include flexList(3, 10, 500px, 900px);
 // @include flexList(4, 1, 500px, 900px, 900px);
 // @include flexList(5, 5, map-get($breakpoints, "tablet"), map-get($breakpoints, "desktop"), map-get($breakpoints, "large"));
+

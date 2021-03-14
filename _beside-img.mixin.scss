@@ -1,23 +1,21 @@
-/**********************************************************
-                      beforeImg mixin
-***********************************************************/
-
-@mixin beforeImg (
+@mixin beside-img (
   $width: 25px,
   $height: 25px,
-  $img: "'ico/ico-puce.svg'",
-  $margin: 0 15px 0 0
+  $img: 'url(../images/ico/ico-dowload.svg)',
+  $margin: 0 15px 0 0,
+  $side: before,
+  $color: false
 ) {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  &:before {
+  &:#{$side} {
     content: '';
     display: block;
     @include rem(margin, $margin);
     @include rem(width, $width);
     @include rem(height, $height);
     @include rem(flex, 0 0 $width);
-    @include bgImg($img);
+    @include bgi($img, contain, center center, no-repeat, $color);
   }
 }

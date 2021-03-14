@@ -1,0 +1,9 @@
+@mixin extend-width (
+  $maxWidth: 100vw
+) {
+  position: relative;
+  width: 100vw;
+  max-width: $maxWidth;
+  left: 50%;
+  transform: translateX(-50%);
+}

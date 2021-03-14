@@ -1,0 +1,24 @@
+@mixin bgi (
+  $img: 'url(../images/ico/ico-download.svg)',
+  $size: contain,
+  $position: center center,
+  $repeat: no-repeat,
+  $color: false
+) {
+  @if $color == false {
+    background-image: $img;
+    background-size: $size;
+    background-position: $position;
+    background-repeat: $repeat;
+  } @else {
+    background: $color;
+    -webkit-mask-image: $img;
+    mask-image: $img;
+    -webkit-mask-size: $size;
+    mask-size: $size;
+    -webkit-mask-position: $position;
+    mask-position: $position;
+    -webkit-mask-repeat: $repeat;
+    mask-repeat: $repeat;
+  }
+}

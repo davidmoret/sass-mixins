@@ -1,12 +1,7 @@
-/**********************************************************
-                      LISTING mixin
-***********************************************************/
-
 @mixin flex(
   $direction: row,
-  $wrap: nowrap,
-  $type: flex
+  $wrap: nowrap
 ){
-  display: $type;
+  display: flex;
   flex-flow: $direction $wrap;
 }

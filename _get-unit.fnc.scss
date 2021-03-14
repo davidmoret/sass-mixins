@@ -1,0 +1,3 @@
+@function get-unit($value) {
+  @return str-slice($value * 0 + "", 2, -1);
+}
